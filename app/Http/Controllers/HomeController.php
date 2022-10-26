@@ -36,6 +36,6 @@ class HomeController extends Controller
 			$task->file = $fileName;
     	}
 		$task->save();
-		return back()->with('success','Task has been created.');
+		return back()->with('success','Задача создана.');
     }
 }
