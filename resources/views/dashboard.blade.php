@@ -13,6 +13,7 @@
                   <th scope="col">тема</th>
                   <th scope="col">описание</th>
                   <th scope="col">вложенный файл</th>
+                  <th scope="col">дата создания</th>
                   <th scope="col">время старта задачи</th>
                   <th scope="col">время завершения задачи</th>
                   <th scope="col">Статус</th>
@@ -27,6 +28,7 @@
                       <td>{{ $task->theme }}</td>
                       <td>{{ $task->description }}</td>
                       <td><a target="_blank" href="{{'storage/uploads/'.$task->file}}">{{ $task->file }}</a></td>
+                      <td>{{ $task->created_at }}</td>
                       <td>{{ $task->start_time }}</td>
                       <td>{{ $task->end_time }}</td>
                       <td>
